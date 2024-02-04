@@ -1,0 +1,39 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Todo App</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Todo App</h1>
+      <form @submit.prevent="addTodo">
+        <label for="new-todo">Add New Todo</label>
+        <input type="text" id="new-todo" v-model="newTodo" />
+        <button>Add</button>
+      </form>
+      <ul>
+        <li v-for="todo in todos" :key="todo._id">
+          <input
+            type="checkbox"
+            :id="todo._id"
+            v-model="todo.completed"
+            @change="updateTodo(todo)"
+          />
+          <label :for="todo._id">{{ todo.title }}</label>
+          <button @click="deleteTodo(todo)">Delete</button>
+        </li>
+      </ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          todos: [],
+          newTodo: "",
+        },
+        created() {
+          this.fetchTodos();
+        },
+        methods: -->
